@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    align-items:center;
+    justify-content: center;
+}
+
+nav
+{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo{
+    width: 100px;
+    cursor: pointer;
+
+}
+
+nav .logo:hover{
+    background: linear-gradient(white,rgb(40, 15, 15));
+    border-radius: 50%;
+    width: 90px;
+}
+
+/* Add this CSS in your style.css file */
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    overflow: hidden;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    position: relative; /* Create a relative positioning context */
+    transition: border-bottom 0.3s ease; /* Add a transition for smooth effect */
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2.8px solid #eff70e6a; /* Add the underline effect on hover */
+  }
+  
+.content{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh;
+  
+}
+.content a, .content h1 {
+    margin: -5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.content h1{
+    font-size: 130px;
+    color: #e6e6e6;
+    font-weight: 600;
+    
+    transition: 0.7s;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border:2px solid #fff;
+    padding: 14px 70px ;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.content a:hover{
+    background: #fff;
+    color: black;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    width: 100%;
+}
+
+.about {
+    position: relative;
+    width: 111%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    overflow: hidden; /* Ensure the video doesn't overflow the container */
+    margin: 0;
+    padding: 0;
+
+    margin-left: -75px;
+}
+
+
+
+.about .back-video1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the video's aspect ratio while covering the container */
+    z-index: -1; /* Move the video behind the gradient overlay */
+}
+
+.about .back-video1::before {
+    content: "";
+    position: relative;
+    right: 0; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.1),rgba(0,0,0,0.1) rgba(0, 0, 0, 0.3));
+    z-index: 2;
+}
+
+.aboutcontent {
+        position: relative;
+      /* Adjust the z-index to make it appear on top of the background video */
+        text-align: center; /* Center the content horizontally */
+        color: #fff; /* Set the text color to white or your preferred color */
+        padding: 20px; /* Add padding to the content for spacing */
+        display: inline-block;
+    }
+    
+
+
+
+
+
+
+
+    
+.container{
+    width: 100%;
+    height: 75vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h1{
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    padding-top: 25px;
+    text-align: center;
+    
+}
+
+.text{
+    margin-top: 20px;
+    margin-bottom: -100px;
+    margin-left: -50px;
+}
+
+
+.text2 h1{
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    padding-top: 25px;
+    text-align: center;
+    
+}
+
+.text2{
+    margin-top: 20px;
+   
+}
+
+
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box{
+    width: 150px;
+    height: 300px;
+    margin: 5px;
+    border-radius: 10px;
+    background: url(images/avengers/Snapinsta.app_420171303_211372652048150_4546165964110184612_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: ease-in 1s;
+    cursor: pointer;
+    position: relative;
+    border-color: beige;
+}
+
+.img-box:nth-child(2){
+    background: url(images/avengers/Snapinsta.app_419127478_2599504733561886_326335093519348633_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(3){
+    background: url(images/avengers/Snapinsta.app_419233686_755566182618048_7895575623720765578_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(4){
+    background: url(images/avengers/Snapinsta.app_419265922_3543684589227789_7276023144740917919_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(5){
+    background: url(images/avengers/Snapinsta.app_419269716_1076070793441140_8736513527205011388_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(6){
+    background: url(images/avengers/Snapinsta.app_419279787_597110792576154_6480996890764377518_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img-box:nth-child(7){
+    background: url(images/avengers/Snapinsta.app_419303170_1129748761528568_3251825635580496959_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(8){
+    background: url(images/avengers/Snapinsta.app_419561935_249988438125252_3365795337434653191_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(9){
+    background: url(images/avengers/Snapinsta.app_420171303_211372652048150_4546165964110184612_n_1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.img-box:hover{
+    width:400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+
+.img-box:nth-child(3):hover{
+    width:500px;
+}
+
+.img-box h3{
+    color:rgb(187, 187, 237);
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+   opacity: 0;
+   transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
+
+
+
+
+
+.marquee-container {
+    width: 250%;
+    overflow: hidden;
+    margin: 20px;
+}
+
+
+.marquee-container1 {
+    width: 100%;
+    overflow: hidden;
+    margin: 5px;
+}
+
+
+.marquee1{
+    display: flex;
+    animation: 40s linear infinite;
+}
+
+.marquee1 img {
+    max-width: 300%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+.marquee {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+.marquee img {
+    max-width: 300%;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes forwards {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+  /* Adjust the duration and timing function as needed */
+  .scroll-container {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 10s linear infinite;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.text1{
+    color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+
+.fade img{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+   
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+    max-width: 100%;
+    margin-left: -100px;
+    
+}
+
+.
+
+.text3 {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    
+    font-weight:300px;
+}
+
+.text3 p{
+    font-weight:300px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #c1bfbf;
+}
+
+.text-container1{
+    flex: 1;
+    text-align: left;
+    max-width:fit-content;
+    height: fit-content;
+}
+
+.text-container1 img{
+    height:300px;
+    width: 300px;
+    margin: 15px;
+    transition: ease 0.3s;
+}
+
+.text-container1 img:hover{
+    transform: translateX(10px);
+}
+
+
+
+.btn{
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+button{
+    background: #717171;
+}
+
+
+
+
+
+
+
+
+
+
+.Home1{
+    display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+           margin: -30px;
+            background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+}
+
+.Home1 .matter1{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+span{
+    color: burlywood;
+    font-weight: 700;
+}
+.Home1 .matter1 h3{
+    font-size: 30px;
+}
+
+
+.Home1 a{
+    text-decoration: none;
+    display: inline-block;
+    color: #070707;
+    font-size: 24px;
+    border:2px solid #050505;
+    padding: 14px 70px ;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.Home1 a:hover{
+    background: #0f0e0e;
+    color: rgb(255, 255, 255);
+}
+
+.matter1 img{
+    width: 200px;
+    display: flex;
+    margin-left: 500px;
+    margin-top: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
